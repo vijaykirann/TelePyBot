@@ -12,7 +12,7 @@ client.start()
 async def main():
     download_path = 'C:\\Users\\Vicky\\Documents\\Python_Projects\\testdata'
     channel_name = 'books_and_magazines'
-    msg_limit = 11
+    msg_limit = 10
     #channel = await client.get_entity(channel_link)
     #print(channel)
     message = await client.get_messages(channel_name, msg_limit, filter=InputMessagesFilterDocument)
@@ -28,4 +28,7 @@ async def main():
             print('Download_Skipped_File_Exits')
 
 with client:
-    client.loop.run_until_complete(main())
+    try:
+        client.loop.run_until_complete(main())
+    except Exception:
+        print('Error Occured')
