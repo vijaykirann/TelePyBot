@@ -11,7 +11,7 @@ client.start()
 
 async def main():
     download_path = 'C:\\Users\\Vicky\\Documents\\Python_Projects\\testdata'
-    channel_name = 'books_and_magazines'
+    channel_name = 'channel name without @symbol'
     msg_limit = 10
     #channel = await client.get_entity(channel_link)
     #print(channel)
