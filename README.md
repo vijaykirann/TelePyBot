@@ -1,4 +1,4 @@
-# TelePyBot : Telegram Channel Downloader
+# TelePyBot : Telegram Channel Downloader Bot
 # Public Telegram Channel based Media\Ebook library
 
 *This project was to create a self hosted pdf library based on the pdf and news sent on the telegram channel  and there is no need of any external service dependencies.
