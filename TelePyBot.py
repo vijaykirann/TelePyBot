@@ -6,7 +6,7 @@ import time
 from telethon.tl.functions.channels import GetParticipantsRequest
 from telethon.tl.types import InputMessagesFilterDocument
 
-client = TelegramClient('vijaykirann', '1385776', '87b3a6e5afba70b1c0e9263f9988cec3')
+client = TelegramClient('username', 'id', 'token')
 client.start()
 
 async def main():
