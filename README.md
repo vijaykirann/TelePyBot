@@ -10,9 +10,13 @@ The script was developed on windows and is being used on Linux(Debian)*
 1)	To start with you have to create your own telegram app config and get token thru https://my.telegram.org/auth (you can google it)
 2)	Update the  script with **Telegram Username, App api_id, App api_hash** from step 1
 3)	Make sure you are using **Python3** and install following modules
-**  pip3 install cryptg
-  pip3 install telethon
-  pip3 install asyncio**
+------------
+pip3 install cryptg
+------------
+pip3 install telethon
+------------
+pip3 install asyncio
+------------
 4)	Update the Channel name **without @** against : **channel_name**
 5)	Mention the path against : **download_path**
 6)  Number of media files to be downloaded can be restricted using : **msg_limit **
