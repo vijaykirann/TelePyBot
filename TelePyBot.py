@@ -3,15 +3,17 @@ from telethon import TelegramClient
 import asyncio
 import os
 import time
+import sys
 from telethon.tl.functions.channels import GetParticipantsRequest
 from telethon.tl.types import InputMessagesFilterDocument
 
-client = TelegramClient('username', 'id', 'token')
+client = TelegramClient('+919535121130', '1385776', '87b3a6e5afba70b1c0e9263f9988cec3')
 client.start()
 
 async def main():
-    download_path = 'C:\\Users\\Vicky\\Documents\\Python_Projects\\testdata'
-    channel_name = 'channel name without @symbol'
+    download_path = '/media/USB'
+    #channel_name = 'dcmarvelcomix'
+    channel_name = sys.argv[1]
     msg_limit = 10
     #channel = await client.get_entity(channel_link)
     #print(channel)
