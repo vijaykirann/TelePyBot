@@ -12,7 +12,7 @@ The script was developed on windows and is being used on Linux(Debian)*
 3)	Make sure you are using **Python3** and install following modules
 
 
-        pip3 install cryptg
+        pip3 install cryptg (depreciated)
         pip3 install telethon
         pip3 install asyncio
 4)	Update the Channel name **without @** against : **channel_name**
@@ -20,5 +20,9 @@ The script was developed on windows and is being used on Linux(Debian)*
 6)  Number of media files to be downloaded can be restricted using : **msg_limit **
 7)	Place it in the accessible folder with required permissions.
 8)	Execute it using a crontab and the media will be downloaded as per schedule.
+9)	Cron Tab details
+	      0 1 * * * python3 pytele.py books_and_magazines
+              0 0 * * * python3 pytele.py Marvel_DC_Comics_Book
+              30 1 * * * /usr/bin/find /media/USB/ -type f -mtime +20 -exec rm {} +
 
 ###### Note: *Since I have limited storage I have a cron job to delete the files in 7 days.*
